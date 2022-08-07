@@ -12,6 +12,7 @@
 		1850505B28A03EBA00B05F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1850505A28A03EBA00B05F3A /* Assets.xcassets */; };
 		1850505E28A03EBA00B05F3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1850505D28A03EBA00B05F3A /* Preview Assets.xcassets */; };
 		1850506628A0425D00B05F3A /* OnChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850506528A0425D00B05F3A /* OnChangeView.swift */; };
+		1850506828A0452800B05F3A /* confirmationDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850506728A0452800B05F3A /* confirmationDialogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		1850505A28A03EBA00B05F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1850505D28A03EBA00B05F3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1850506528A0425D00B05F3A /* OnChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnChangeView.swift; sourceTree = "<group>"; };
+		1850506728A0452800B05F3A /* confirmationDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmationDialogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				1850506528A0425D00B05F3A /* OnChangeView.swift */,
+				1850506728A0452800B05F3A /* confirmationDialogView.swift */,
 			);
 			path = exercides;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				1850505928A03EB600B05F3A /* ContentView.swift in Sources */,
 				1850506628A0425D00B05F3A /* OnChangeView.swift in Sources */,
 				1850505728A03EB600B05F3A /* InstafilterApp.swift in Sources */,
+				1850506828A0452800B05F3A /* confirmationDialogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
