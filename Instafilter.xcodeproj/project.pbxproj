@@ -11,6 +11,7 @@
 		1850505928A03EB600B05F3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850505828A03EB600B05F3A /* ContentView.swift */; };
 		1850505B28A03EBA00B05F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1850505A28A03EBA00B05F3A /* Assets.xcassets */; };
 		1850505E28A03EBA00B05F3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1850505D28A03EBA00B05F3A /* Preview Assets.xcassets */; };
+		1850506628A0425D00B05F3A /* OnChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850506528A0425D00B05F3A /* OnChangeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1850505828A03EB600B05F3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1850505A28A03EBA00B05F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1850505D28A03EBA00B05F3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1850506528A0425D00B05F3A /* OnChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnChangeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		1850505528A03EB600B05F3A /* Instafilter */ = {
 			isa = PBXGroup;
 			children = (
+				1850506428A0424500B05F3A /* exercides */,
 				1850505628A03EB600B05F3A /* InstafilterApp.swift */,
 				1850505828A03EB600B05F3A /* ContentView.swift */,
 				1850505A28A03EBA00B05F3A /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				1850505D28A03EBA00B05F3A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1850506428A0424500B05F3A /* exercides */ = {
+			isa = PBXGroup;
+			children = (
+				1850506528A0425D00B05F3A /* OnChangeView.swift */,
+			);
+			path = exercides;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1850505928A03EB600B05F3A /* ContentView.swift in Sources */,
+				1850506628A0425D00B05F3A /* OnChangeView.swift in Sources */,
 				1850505728A03EB600B05F3A /* InstafilterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
