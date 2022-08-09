@@ -16,6 +16,7 @@
 		1850506A28A154B300B05F3A /* CoreImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850506928A154B300B05F3A /* CoreImageView.swift */; };
 		1850506C28A15C9400B05F3A /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850506B28A15C9400B05F3A /* ImagePickerView.swift */; };
 		1850506E28A15CBD00B05F3A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850506D28A15CBD00B05F3A /* ImagePicker.swift */; };
+		1850507028A3075000B05F3A /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850506F28A3074F00B05F3A /* ImageSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1850506928A154B300B05F3A /* CoreImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageView.swift; sourceTree = "<group>"; };
 		1850506B28A15C9400B05F3A /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		1850506D28A15CBD00B05F3A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1850506F28A3074F00B05F3A /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				1850506928A154B300B05F3A /* CoreImageView.swift */,
 				1850506B28A15C9400B05F3A /* ImagePickerView.swift */,
 				1850506D28A15CBD00B05F3A /* ImagePicker.swift */,
+				1850506F28A3074F00B05F3A /* ImageSaver.swift */,
 			);
 			path = exercides;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				1850506C28A15C9400B05F3A /* ImagePickerView.swift in Sources */,
 				1850505728A03EB600B05F3A /* InstafilterApp.swift in Sources */,
 				1850506828A0452800B05F3A /* confirmationDialogView.swift in Sources */,
+				1850507028A3075000B05F3A /* ImageSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +302,7 @@
 				DEVELOPMENT_TEAM = N89SVX78VR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,6 +332,7 @@
 				DEVELOPMENT_TEAM = N89SVX78VR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

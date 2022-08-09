@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-      ImagePickerView()
-    }
+  
+  var body: some View {
+    ImagePickerView()
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
