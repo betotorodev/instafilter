@@ -127,17 +127,21 @@ struct ContentView: View {
         ImagePicker(image: $inputImage)
       }
       .confirmationDialog("Select a filter", isPresented: $showingFilterSheet) {
-        Button("Crystallize") { setFilter(CIFilter.crystallize()) }
-        Button("Comic Effect") { setFilter(CIFilter.comicEffect()) }
-        Button("Gaussian Blur") { setFilter(CIFilter.gaussianBlur()) }
-        Button("Pixellate") { setFilter(CIFilter.pixellate()) }
-        Button("Sepia Tone") { setFilter(CIFilter.sepiaTone()) }
-        Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask()) }
-//        Button("Vignette") { setFilter(CIFilter.vignette()) }
-        Button("affine clamp") { setFilter(CIFilter.affineClamp()) }
-        Button("thermal") { setFilter(CIFilter.thermal()) }
-        Button("bloom") { setFilter(CIFilter.bloom()) }
-        Button("Cancel", role: .cancel) { }
+        Group {
+          Button("Crystallize") { setFilter(CIFilter.crystallize()) }
+          Button("Comic Effect") { setFilter(CIFilter.comicEffect()) }
+          Button("Gaussian Blur") { setFilter(CIFilter.gaussianBlur()) }
+          Button("Pixellate") { setFilter(CIFilter.pixellate()) }
+          Button("Sepia Tone") { setFilter(CIFilter.sepiaTone()) }
+          Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask()) }
+          Button("Vignette") { setFilter(CIFilter.vignette()) }
+          Button("affine clamp") { setFilter(CIFilter.affineClamp()) }
+          Button("thermal") { setFilter(CIFilter.thermal()) }
+          Button("bloom") { setFilter(CIFilter.bloom()) }
+        }
+        Group {
+          Button("Cancel", role: .cancel) { }          
+        }
       }
     }
   }
