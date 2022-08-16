@@ -12,7 +12,8 @@ import SwiftUI
 struct ContentView: View {
   @State private var image: Image?
   @State private var filterIntensity = 0.5
-  @State private var filterRadius = 0.5
+  @State private var filterRadius = 5.0
+  @State private var filterScale = 5.0
   @State private var showingImagePicker = false
   @State private var inputImage: UIImage?
   @State private var processedImage: UIImage?
@@ -49,7 +50,7 @@ struct ContentView: View {
     
     if inputKeys.contains(kCIInputIntensityKey) { currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey) }
     if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(filterRadius * 50, forKey: kCIInputRadiusKey) }
-    if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(filterIntensity * 10, forKey: kCIInputScaleKey) }
+    if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(filterScale * 10, forKey: kCIInputScaleKey) }
     
     guard let outputImage = currentFilter.outputImage else { return }
     
@@ -81,19 +82,30 @@ struct ContentView: View {
           
         }
         
-        HStack {
-          Text("Intensity")
-          Slider(value: $filterIntensity)
-            .onChange(of: filterIntensity) { _ in
-              applyProcessing()
-            }
+        if currentFilter.inputKeys.contains(kCIInputIntensityKey) {
+          HStack {
+            Text("Intensity")
+            Slider(value: $filterIntensity)
+              .onChange(of: filterIntensity) { _ in applyProcessing() }
+          }
+          .padding(.vertical)
         }
-        HStack {
-          Text("Radius")
-          Slider(value: $filterRadius)
-            .onChange(of: filterRadius) { _ in
-              applyProcessing()
-            }
+        
+        if currentFilter.inputKeys.contains(kCIInputRadiusKey) {
+          HStack {
+            Text("Radius")
+            Slider(value: $filterRadius, in: 0...200)
+              .onChange(of: filterRadius) { _ in applyProcessing() }
+          }
+          .padding(.vertical)
+        }
+        
+        if currentFilter.inputKeys.contains(kCIInputScaleKey) {
+          HStack {
+            Text("Scale")
+            Slider(value: $filterScale, in: 0...10)
+              .onChange(of: filterScale) { _ in applyProcessing() }
+          }
           .padding(.vertical)
         }
         
